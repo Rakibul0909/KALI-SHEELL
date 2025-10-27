@@ -43,13 +43,13 @@ RESET="\[\e[0m\]"
 prompt_color='\[\033[;32m\]'   # Green
 info_color='\[\033[1;34m\]'    # Bold Blue
 
-# -------------- Git Branch Function --------------
+# -------------- Git Branch Function (kept but NOT used) --------------
 parse_git_branch() {
     git rev-parse --abbrev-ref HEAD 2>/dev/null | awk '{print " "$0}'
 }
 
-# -------------- Prompt Setup --------------
-export PS1="${prompt_color}┌──(${info_color}Termux${info_color}㉿${BLUE}localhost${prompt_color})-[${WHITE}\w${prompt_color}]\n${prompt_color}└─${info_color}\$${MAGENTA}\$(parse_git_branch)${RESET} "
+# -------------- Prompt Setup (git branch removed) --------------
+export PS1="${prompt_color}┌──(${info_color}Termux${info_color}㉿${BLUE}localhost${prompt_color})-[${WHITE}\w${prompt_color}]\n${prompt_color}└─${info_color}\$${RESET} "
 # <<< KALI_PROMPT_END
 EOB
 
