@@ -49,7 +49,7 @@ parse_git_branch() {
 }
 
 # -------------- Prompt Setup --------------
-export PS1="${prompt_color}┌──(${info_color}Termux${info_color}㉿${BLUE}localhost${prompt_color})-[${WHITE}\w${prompt_color}]\n${prompt_color}└─${BLUE}\$${MAGENTA}\$(parse_git_branch)${RESET} "
+export PS1="${prompt_color}┌──(${info_color}Termux${info_color}㉿${BLUE}localhost${prompt_color})-[${WHITE}\w${prompt_color}]\n${prompt_color}└─${info_color}\$${MAGENTA}\$(parse_git_branch)${RESET} "
 # <<< KALI_PROMPT_END
 EOB
 
